@@ -16,13 +16,15 @@ export default function App() {
           element: <Home />
         },
         {
-          path: "/api",
+          path: "api",
           element: <Api />
         }
       ]
 
     }
-  ]);
+  ], {
+    basename: import.meta.env.BASE_URL,
+  });
 
 
   return (
