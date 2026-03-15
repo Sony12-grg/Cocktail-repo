@@ -7,7 +7,7 @@
 
 @layer base{
     body{
-        @apply font-sans bg-background text-foreground;
+        @apply font-sans bg-[#230312] text-white;
     }
   * {
     @apply border-border outline-ring/50;

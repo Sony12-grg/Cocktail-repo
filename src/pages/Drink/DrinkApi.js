@@ -9,14 +9,20 @@ export const drinkApi = createApi({
 
     endpoints: (builder) => ({
         getDrink: builder.query({
-            query: () =>  ({
+            query: ({ category = 'Cocktail' } = {}) =>  ({
                   url: 'filter.php',
                   method: 'GET',
                   params: {
-                    c: 'Cocktail'
+                    c: category
                   }
-            })
-                
+            }),
+            transformResponse: (response, meta, arg) => {
+                const limit = arg?.limit ?? 8
+                return {
+                    ...response,
+                    drinks: (response?.drinks || []).slice(0, limit)
+                }
+            }
         })
     })
 })
