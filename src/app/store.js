@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { drinkApi } from '../pages/Drink/drinkApi'
+import { drinkApi } from "../pages/Drink/DrinkApi"
 import { ingredientApi } from '../pages/Ingredients/ingredientApi'
 import { searchDrinkApi } from '../pages/Drink/searchDrinkApi'
 import { randomApi } from '../pages/Ingredients/randomApi'

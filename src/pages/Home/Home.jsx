@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../Components/Header'
 import Hero from '../../Components/Hero'
 import SearchBar from '../../Components/SearchBar'
-import { useGetDrinkQuery } from '../Drink/drinkApi'
+import { useGetDrinkQuery } from "../Drink/DrinkApi"
 import { useGetIngredientsQuery } from '../Ingredients/ingredientApi'
 import { useSearchDrinkQuery } from '../Drink/searchDrinkApi'
 import { useGetRandomQuery } from '../Ingredients/randomApi'
