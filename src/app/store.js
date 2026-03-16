@@ -3,7 +3,7 @@ import { drinkApi } from '../pages/Drink/drinkApi'
 import { ingredientApi } from '../pages/Ingredients/ingredientApi'
 import { searchDrinkApi } from '../pages/Drink/searchDrinkApi'
 import { randomApi } from '../pages/Ingredients/randomApi'
-import { searchLetterApi } from '@/pages/Drink/searchLetter'
+import { searchLetterApi } from '../pages/Drink/searchLetter'
 export const store = configureStore({
   reducer: {
  
